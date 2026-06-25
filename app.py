@@ -14,8 +14,8 @@ from langchain_core.prompts import ChatPromptTemplate
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI 
 
 # FIXED: Unified and cleaned up the conflicting chain imports
-from langchain.chains import create_retrieval_chain
-from langchain.chains.combine_documents import create_stuff_documents_chain
+from langchain_classic.chains import create_retrieval_chain
+from langchain_classic.chains.combine_documents import create_stuff_documents_chain
 
 # 1. Handle API Keys gracefully whether running locally or on Streamlit Cloud
 try:
